@@ -1,8 +1,8 @@
 from pydantic import BaseModel
 from typing import Optional, List
-from data_model.educational_path_node import EducationalPathNode
+from data_model.learning_object import LearningObject
 
 class EducationalPath(BaseModel):
-    start: EducationalPathNode
-    end: EducationalPathNode
-    stations: Optional[List[EducationalPathNode]]
+    start: LearningObject
+    end: LearningObject
+    stations: Optional[List[LearningObject]]

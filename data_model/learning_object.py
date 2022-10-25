@@ -1,6 +1,5 @@
-from typing import Iterable
 from pydantic import BaseModel
 
-class EducationalPathNode(BaseModel):
+class LearningObject(BaseModel):
     name: str
     description: str
