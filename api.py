@@ -2,10 +2,11 @@ import secrets
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 
-from data_model.educational_path import EducationalPath
-from data_model.learning_object import LearningObject
-from data_model.path_prediction_request import PathPredictionRequest
-from data_model.path_prediction_response import PathPredictionResponse
+from merlot_data_models.core.educational_path import EducationalPath
+from merlot_data_models.core.learning_object import LearningObject
+from merlot_data_models.path_prediction.request import PathPredictionRequest
+from merlot_data_models.path_prediction.response import PathPredictionResponse
+
 
 app = FastAPI(
     title="Path Prediction API",

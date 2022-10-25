@@ -7,6 +7,8 @@
   
     pip install "fastapi[all]"
 
+    pip install git+https://github.com/thorsten-zylowski-hka/merlot-data-models.git
+
 ## Running the API
     uvicorn api:app --reload
 
